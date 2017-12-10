@@ -34,7 +34,7 @@ class Main extends Component {
         <Entity id="groundpattern"
           geometry={{ primitive:'plane', height:'10000',width:'10000'}}
           rotation="-90 0 0"
-          material={{opacity: '1.0', transparent: 'true', repeat:'10000 10000', metalness:'0.6', roughness:'0.4', src:'#groundTexture2'}}/>
+          material={{ transparent: 'true', repeat:'10000 10000', metalness:'0.6', roughness:'0.4', src:'#groundTexture2'}}/>
 
 
         <Entity primitive="a-light" type="ambient" color="#445451" />
@@ -49,7 +49,6 @@ class Main extends Component {
           height="2048"
           radius="30"
           src="#skyTexture"
-          theta-length="90"
           width="2048"
         />
         <Entity particle-system={{ preset: 'snow', particleCount: 2000 }} />
